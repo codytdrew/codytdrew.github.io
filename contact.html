@@ -3,52 +3,77 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cody Drew's Bio</title>
+    <title>Cody's Bootstrap Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/cody.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="main.js"></script>
 </head>
-
-<!--popped up as an error - background is obsolete-->
 <body background="assets/images/wheat.png">
-    
-<div class="top">
-    <header class="flexhead">
-        <h1>Cody Drew</h1>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
-    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; padding-top: 0px; padding-bottom: 0px;"> 
+            <div class="container" style="background-color: white; padding-top: 0; padding-bottom: 0;"> 
+                <a class="navbar-brand" style="margin:0;" href="https://codytdrew.github.io/">Cody Drew</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto mr-n4">
+                        <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                  </div>
+                </div>
+            </div>   
+        </nav>
+                
+            <div class="container">
+                
+                <form>
+                        <div class="row">
+                        <div class="col-12">
+                            <h1>Contact</h1>
+
+                            <hr>
+
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Name</label>
+                                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                        </div>            
+                        </div>
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                            </div>
+                        </div>
+                        </div>  
+                </form>
+            </div> 
+
+<!-- Is this the correct way to make the footer "sticky?  I set the top margin to 350px -->
+<div class="card-footer text-muted" style="background-color: #666666; color: #777777; border-top: 8px solid #4aaaa5; text-align: center; font-size: 16px; margin-top: 350px;">
+    Copyright ©
 </div>
+              
 
-<div class="wrapper">
-
-    <h2>Contact</h2>
-
-<div class="maincontent">
-<!--Should I have the hr in this main content? Should I place the h2 in here as well?-->
-<!--Cant get message box to align?  Do I need to set a standard margin for the form box? How do I make the border match the other boxes -->
-<!--need clarification on padding affecting width/margin affecting width-->
-    <hr>
-
-    <form>
-        Name<br>
-        <input id="namebox" value="John Smith"><br>
-        Email<br>
-        <input id="emailbox" value="example@gmail.com"><br>
-        Message<br>
-        <textarea id="messagebox"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-
-</div>
-</div>
-
-    <footer>
-        <h3>Copyright ©</h3>
-    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
